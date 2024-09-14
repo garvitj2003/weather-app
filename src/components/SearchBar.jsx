@@ -12,13 +12,22 @@ export const SearchBar = ({ onSeacrh }) => {
     onSeacrh(search);
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      className="h-full w-2/3 flex justify-between font-Roboto drop-shadow-sm"
+    >
       <input
         type="text"
         placeholder="Enter City name"
         onChange={handleChange}
+        className="w-full py-2 indent-4 text-lg outline-none shadow-inner tracking-wider"
       />
-      <button type="submit">Search</button>
+      <button
+        type="submit"
+        className="bg-[#171717] py-2 text-white md:w-40 w-32 md:hover:bg-[#2c2c2c] transition ease-in-out duration-300 text-lg"
+      >
+        Search
+      </button>
     </form>
   );
 };

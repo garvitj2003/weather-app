@@ -15,8 +15,10 @@ export const Dashboard = () => {
     }
   };
   return (
-    <div>
-      <SearchBar onSeacrh={fetchCityData} />
+    <div className="w-full ">
+      <div className="w-full h-14 my-4 flex justify-center">
+        <SearchBar onSeacrh={fetchCityData} />
+      </div>
       <Card city={cityData} />
     </div>
   );

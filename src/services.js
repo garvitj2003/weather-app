@@ -8,6 +8,9 @@ export const apiCall = async (cityName) => {
     const response = await axios.get(api);
     return response;
   } catch (err) {
-    console.error(err);
+    if (err) {
+      alert("city name incorrect");
+      console.error(err);
+    }
   }
 };
