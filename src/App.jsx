@@ -7,15 +7,14 @@ function App() {
     <div className="flex justify-center">
       <div className="h-screen md:w-4/5">
         <div
-          className=" w-full h-16 md:h-20 p-2  my-4 inline-flex items-center "
+          className=" w-full h-12 md:h-20 p-2 my-1 md:my-4 inline-flex items-center "
           id="navbar"
         >
           <svg
-            width="64"
-            height="64"
             viewBox="0 0 67 67"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="h-12 w-12 md:w-[67px] md:h-[67px]"
           >
             <g clip-path="url(#clip0_5_29)">
               <rect width="67" height="67" fill="white" />
@@ -27,11 +26,6 @@ function App() {
                 stroke-linejoin="round"
               />
             </g>
-            <defs>
-              <clipPath id="clip0_5_29">
-                <rect width="67" height="67" fill="white" />
-              </clipPath>
-            </defs>
           </svg>
           <span className="font-Roboto text-5xl text-center font-semibold mx-2 text-[#171717] tracking-tighter ">
             Weather

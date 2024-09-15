@@ -14,7 +14,7 @@ export const SearchBar = ({ onSeacrh }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="h-full w-2/3 flex justify-between font-Roboto drop-shadow-sm"
+      className="h-full md:w-2/3 flex justify-between font-Roboto drop-shadow-sm"
     >
       <input
         type="text"
