@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiKey = "13db6da473698e66b2cf0679f2283ceb";
+const apiKey = import.meta.env.VITE_API_KEY;
 
 export const apiCall = async (cityName) => {
   const api = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric
